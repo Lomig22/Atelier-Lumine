@@ -1,0 +1,28 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="800" viewBox="0 0 1200 800">
+  <defs>
+    <linearGradient id="bg8" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#0a0a0f"/>
+      <stop offset="100%" stop-color="#1a1a23"/>
+    </linearGradient>
+    <filter id="glow8" x="-50%" y="-50%" width="200%" height="200%">
+      <feGaussianBlur stdDeviation="7" result="blur"/>
+      <feMerge>
+        <feMergeNode in="blur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+  </defs>
+  <rect width="1200" height="800" fill="url(#bg8)"/>
+  <g opacity="0.25">
+    <rect x="160" y="520" width="280" height="120" rx="16" fill="#343444"/>
+    <rect x="460" y="520" width="280" height="120" rx="16" fill="#343444"/>
+    <rect x="760" y="520" width="280" height="120" rx="16" fill="#343444"/>
+  </g>
+  <g>
+    <rect x="300" y="210" width="600" height="180" rx="24" fill="#12121a" stroke="#3a3a46"/>
+    <g filter="url(#glow8)">
+      <text x="600" y="300" text-anchor="middle" font-size="64" font-family="sans-serif" fill="#f72585">ÉVÈNEMENT</text>
+      <text x="600" y="300" text-anchor="middle" font-size="64" font-family="sans-serif" fill="none" stroke="#f72585" stroke-width="2">ÉVÈNEMENT</text>
+    </g>
+  </g>
+</svg>

@@ -1,0 +1,35 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="800" viewBox="0 0 1200 800">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#0b0b0f"/>
+      <stop offset="100%" stop-color="#1b1b22"/>
+    </linearGradient>
+    <filter id="glow" x="-50%" y="-50%" width="200%" height="200%">
+      <feGaussianBlur stdDeviation="6" result="coloredBlur"/>
+      <feMerge>
+        <feMergeNode in="coloredBlur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+  </defs>
+  <rect width="1200" height="800" fill="url(#bg)"/>
+  <g opacity="0.25" fill="#ffffff">
+    <rect x="120" y="520" width="220" height="80" rx="14" fill="#3a3a46"/>
+    <rect x="360" y="520" width="220" height="80" rx="14" fill="#3a3a46"/>
+    <rect x="600" y="520" width="220" height="80" rx="14" fill="#3a3a46"/>
+    <rect x="840" y="520" width="220" height="80" rx="14" fill="#3a3a46"/>
+    <rect x="160" y="600" width="880" height="14" rx="7" fill="#2a2a34"/>
+  </g>
+  <g>
+    <rect x="320" y="190" width="560" height="180" rx="24" fill="#12121a" stroke="#3a3a46"/>
+    <rect x="320" y="190" width="560" height="180" rx="24" fill="none" stroke="#ff2d95" stroke-width="3" opacity="0.4"/>
+    <g filter="url(#glow)">
+      <text x="600" y="290" text-anchor="middle" font-size="84" font-family="sans-serif" fill="#ff2d95">BAR</text>
+      <text x="600" y="290" text-anchor="middle" font-size="84" font-family="sans-serif" fill="none" stroke="#ff2d95" stroke-width="2">BAR</text>
+    </g>
+    <g filter="url(#glow)" opacity="0.8">
+      <circle cx="400" cy="360" r="6" fill="#ff2d95"/>
+      <circle cx="800" cy="360" r="6" fill="#ff2d95"/>
+    </g>
+  </g>
+</svg>

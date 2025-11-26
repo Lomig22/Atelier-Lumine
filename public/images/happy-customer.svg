@@ -1,0 +1,38 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="900" viewBox="0 0 1200 900">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#101018"/>
+      <stop offset="100%" stop-color="#1a1a24"/>
+    </linearGradient>
+    <filter id="glowPink" x="-50%" y="-50%" width="200%" height="200%">
+      <feGaussianBlur stdDeviation="6" result="blur"/>
+      <feMerge>
+        <feMergeNode in="blur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+    <filter id="glowBlue" x="-50%" y="-50%" width="200%" height="200%">
+      <feGaussianBlur stdDeviation="6" result="b"/>
+      <feMerge>
+        <feMergeNode in="b"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+  </defs>
+  <rect width="1200" height="900" fill="url(#bg)"/>
+  <!-- Happy customer silhouette -->
+  <circle cx="360" cy="460" r="70" fill="#2f3142"/>
+  <rect x="290" y="520" width="140" height="120" rx="30" fill="#2f3142"/>
+  <!-- Counter / bar -->
+  <rect x="120" y="660" width="440" height="18" rx="9" fill="#2a2c3a"/>
+  <!-- Neon sign on wall -->
+  <rect x="640" y="260" width="360" height="220" rx="24" fill="#10121a" stroke="#37384a"/>
+  <g filter="url(#glowPink)">
+    <text x="820" y="350" text-anchor="middle" font-size="66" font-family="Poppins, Arial, sans-serif" fill="#ff5bf5">NEON</text>
+    <text x="820" y="350" text-anchor="middle" font-size="66" font-family="Poppins, Arial, sans-serif" fill="none" stroke="#ff5bf5" stroke-width="2">NEON</text>
+  </g>
+  <g filter="url(#glowBlue)">
+    <text x="820" y="410" text-anchor="middle" font-size="34" font-family="Poppins, Arial, sans-serif" fill="#4deaff">CUSTOM</text>
+    <text x="820" y="410" text-anchor="middle" font-size="34" font-family="Poppins, Arial, sans-serif" fill="none" stroke="#4deaff" stroke-width="1.5">CUSTOM</text>
+  </g>
+</svg>

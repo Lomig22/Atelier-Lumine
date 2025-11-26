@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="320" height="160" viewBox="0 0 320 160">
+  <rect width="320" height="160" fill="#ffffff"/>
+  <g fill="#0f172a">
+    <circle cx="70" cy="80" r="28"/>
+    <rect x="50" y="100" width="40" height="16" rx="8"/>
+  </g>
+  <text x="140" y="92" font-family="Poppins, Arial, sans-serif" font-weight="700" font-size="32" fill="#0f172a">SALON</text>
+</svg>

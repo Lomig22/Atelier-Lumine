@@ -1,0 +1,56 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="900" viewBox="0 0 1200 900">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#0e0e13"/>
+      <stop offset="100%" stop-color="#1a1a22"/>
+    </linearGradient>
+    <filter id="glowPink" x="-50%" y="-50%" width="200%" height="200%">
+      <feGaussianBlur stdDeviation="6" result="blur"/>
+      <feMerge>
+        <feMergeNode in="blur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+    <filter id="glowBlue" x="-50%" y="-50%" width="200%" height="200%">
+      <feGaussianBlur stdDeviation="6" result="b"/>
+      <feMerge>
+        <feMergeNode in="b"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+  </defs>
+  <rect width="1200" height="900" fill="url(#bg)"/>
+  <!-- Desk -->
+  <rect x="120" y="640" width="960" height="36" rx="10" fill="#2b2b36"/>
+  <!-- User silhouette -->
+  <circle cx="360" cy="420" r="70" fill="#30303c"/>
+  <rect x="290" y="480" width="140" height="120" rx="30" fill="#30303c"/>
+  <!-- Laptop -->
+  <rect x="250" y="560" width="260" height="22" rx="6" fill="#383849"/>
+  <rect x="270" y="460" width="220" height="130" rx="12" fill="#0f0f14" stroke="#444457"/>
+  <rect x="282" y="472" width="196" height="94" rx="8" fill="#141420"/>
+  <!-- Configurator UI blocks -->
+  <rect x="292" y="484" width="56" height="18" rx="6" fill="#222234"/>
+  <rect x="352" y="484" width="126" height="18" rx="6" fill="#222234"/>
+  <rect x="292" y="508" width="186" height="10" rx="5" fill="#222234"/>
+  <rect x="292" y="524" width="96" height="10" rx="5" fill="#222234"/>
+  <rect x="392" y="524" width="86" height="10" rx="5" fill="#222234"/>
+
+  <!-- Neon preview sign -->
+  <rect x="640" y="260" width="360" height="200" rx="24" fill="#111119" stroke="#3a3a46"/>
+  <g filter="url(#glowPink)">
+    <text x="820" y="350" text-anchor="middle" font-size="64" font-family="Poppins, sans-serif" fill="#ff5bf5">NEON</text>
+    <text x="820" y="350" text-anchor="middle" font-size="64" font-family="Poppins, sans-serif" fill="none" stroke="#ff5bf5" stroke-width="2">NEON</text>
+  </g>
+  <g filter="url(#glowBlue)">
+    <text x="820" y="410" text-anchor="middle" font-size="36" font-family="Poppins, sans-serif" fill="#4deaff">CUSTOM</text>
+    <text x="820" y="410" text-anchor="middle" font-size="36" font-family="Poppins, sans-serif" fill="none" stroke="#4deaff" stroke-width="1.5">CUSTOM</text>
+  </g>
+  <!-- UI palette cards -->
+  <rect x="660" y="490" width="90" height="120" rx="14" fill="#141420" stroke="#363649"/>
+  <rect x="760" y="490" width="90" height="120" rx="14" fill="#141420" stroke="#363649"/>
+  <rect x="860" y="490" width="90" height="120" rx="14" fill="#141420" stroke="#363649"/>
+  <circle cx="705" cy="538" r="16" fill="#ff5bf5"/>
+  <circle cx="805" cy="538" r="16" fill="#4deaff"/>
+  <circle cx="905" cy="538" r="16" fill="#6bffb5"/>
+</svg>

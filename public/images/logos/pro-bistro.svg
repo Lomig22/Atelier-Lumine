@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="320" height="160" viewBox="0 0 320 160">
+  <rect width="320" height="160" fill="#ffffff"/>
+  <g fill="#0f172a">
+    <rect x="30" y="60" width="60" height="40" rx="8"/>
+    <circle cx="80" cy="60" r="8"/>
+  </g>
+  <text x="170" y="94" font-family="Poppins, Arial, sans-serif" font-weight="700" font-size="36" fill="#0f172a">BISTRO</text>
+</svg>

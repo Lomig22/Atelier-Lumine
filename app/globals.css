@@ -1,0 +1,12 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root { color-scheme: light; }
+html, body { height: 100%; }
+body { background: #ffffff; color: #111827; }
+
+.button-primary { @apply px-5 py-3 rounded-md bg-black text-white hover:bg-neutral-800 transition; }
+.button-ghost { @apply px-5 py-3 rounded-md border border-neutral-300 text-neutral-700 hover:bg-neutral-100 transition; }
+.container { @apply max-w-7xl mx-auto px-4; }
+.section { @apply py-16; }

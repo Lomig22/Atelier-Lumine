@@ -1,0 +1,27 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="800" viewBox="0 0 1200 800">
+  <defs>
+    <linearGradient id="bg7" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#0b0b0f"/>
+      <stop offset="100%" stop-color="#191922"/>
+    </linearGradient>
+    <filter id="glow7" x="-50%" y="-50%" width="200%" height="200%">
+      <feGaussianBlur stdDeviation="6" result="blur"/>
+      <feMerge>
+        <feMergeNode in="blur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+  </defs>
+  <rect width="1200" height="800" fill="url(#bg7)"/>
+  <g opacity="0.25">
+    <rect x="220" y="520" width="280" height="120" rx="16" fill="#343442"/>
+    <rect x="700" y="520" width="280" height="120" rx="16" fill="#343442"/>
+  </g>
+  <g>
+    <rect x="340" y="220" width="520" height="160" rx="20" fill="#12121a" stroke="#3a3a46"/>
+    <g filter="url(#glow7)">
+      <text x="600" y="300" text-anchor="middle" font-size="64" font-family="sans-serif" fill="#ff7b54">CAFÉ</text>
+      <text x="600" y="300" text-anchor="middle" font-size="64" font-family="sans-serif" fill="none" stroke="#ff7b54" stroke-width="2">CAFÉ</text>
+    </g>
+  </g>
+</svg>
